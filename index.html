@@ -2,107 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Everjoy | Developer Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everjoy's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    * {
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f4f4f4;
+      background-color: #f4f7fa;
       color: #333;
-      line-height: 1.6;
-      padding: 40px 20px;
     }
     header {
+      background-color: #007bff;
+      color: white;
+      padding: 30px;
       text-align: center;
-      margin-bottom: 50px;
     }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      color: #1e3a8a;
-    }
-    header p {
-      font-size: 1.1rem;
-      color: #555;
+    header img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      margin-bottom: 20px;
     }
     section {
-      max-width: 800px;
-      margin: auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
+      margin: 40px;
     }
-    section h2 {
-      font-size: 1.6rem;
-      margin-bottom: 20px;
-      color: #111827;
+    h2 {
+      color: #007bff;
     }
-    ul {
-      list-style: disc;
-      padding-left: 20px;
+    .github-stats {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
     }
-    a {
-      color: #1d4ed8;
-      text-decoration: none;
+    .github-stats img {
+      margin: 0 15px;
     }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
+    .cv-button {
+      display: block;
       text-align: center;
-      margin-top: 50px;
-      color: #777;
+      margin: 20px 0;
+    }
+    .cv-button a {
+      background-color: #28a745;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .cv-button a:hover {
+      background-color: #218838;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Hi, I'm Everjoy</h1>
-    <p>IT & Management Graduate | Cybersecurity & Software Dev Enthusiast</p>
+    <img src="https://via.placeholder.com/150" alt="Profile Picture">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi, I'm Everjoy – A passionate IT graduate focused on software development, cybersecurity, and data analytics.</p>
   </header>
 
   <section>
-    <h2>🌟 About Me</h2>
-    <p>I'm a passionate IT graduate with hands-on experience in cybersecurity, data analytics, and web development. I love solving real-world problems through clean code and intelligent design.</p>
-  </section>
+    <h2>About Me</h2>
+    <p>I'm an IT and Management graduate with expertise in software development, cybersecurity, and business intelligence. I love solving problems and creating innovative solutions.</p>
 
-  <section>
-    <h2>💼 Projects</h2>
+    <h2>Skills</h2>
     <ul>
-      <li><strong>SecureIntel:</strong> Advanced Threat Detection & Analytics System using Python, SQL, Tableau</li>
-      <li><strong>Webfolio:</strong> Personal Portfolio Website using HTML, CSS, JavaScript</li>
+      <li>Programming: Python, JavaScript, R, SQL</li>
+      <li>Web Development: HTML, CSS, WordPress, SEO</li>
+      <li>Tools: Tableau, Power BI, Git, TensorFlow</li>
+      <li>Cybersecurity: Network Security, Threat Detection</li>
     </ul>
-  </section>
 
-  <section>
-    <h2>🛠️ Skills</h2>
-    <ul>
-      <li>Languages: Python, SQL, JavaScript, HTML, CSS, R</li>
-      <li>Tools: Power BI, Tableau, TensorFlow, Trello, Microsoft Excel</li>
-      <li>Systems: Salesforce, HubSpot, WordPress, QuickBooks, Sage</li>
-      <li>Domains: Cybersecurity, Web Dev, Business Intelligence, SEO</li>
-    </ul>
-  </section>
+    <div class="github-stats">
+      <img src="https://github-readme-stats.vercel.app/api?username=everjoy72&show_icons=true&hide_title=true&count_private=true&hide=prs" alt="GitHub Stats">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=everjoy72&layout=compact&langs_count=6&hide_title=true" alt="Top Languages">
+    </div>
 
-  <section>
-    <h2>📫 Contact</h2>
-    <p>Email: <a href="mailto:garaeverjoy72@gmail.com">garaeverjoy72@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/everjoy72" target="_blank">github.com/everjoy72</a></p>
-    <p>Portfolio: <a href="https://everjoy72.github.io" target="_blank">everjoy72.github.io</a></p>
+    <div class="cv-button">
+      <a href="https://github.com/everjoy72/CV.pdf" download>Download My CV</a>
+    </div>
   </section>
-
-  <footer>
-    <p>© 2025 Everjoy. Built with 💙 and HTML/CSS.</p>
-  </footer>
 
 </body>
 </html>
