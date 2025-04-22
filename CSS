@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #2b6e6a;
+}
+
+/* Header Styles */
+header {
+    background-color: #f3e1d5;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #d47a73;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.github-stats img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.download-cv button {
+    background-color: #9dbd6d;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.download-cv button:hover {
+    background-color: #7a9f53;
+}
+
+/* About Section */
+.about {
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #e5e8e4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #f3e1d5;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #d47a73;
+    font-size: 1.1em;
+}
