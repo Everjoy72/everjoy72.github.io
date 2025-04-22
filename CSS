@@ -1,103 +1,77 @@
-/* General Styles */
+:root {
+  --beige: #f5f5dc;
+  --blush: #f9c5bd;
+  --pastel-green: #c8e4c5;
+  --text-color: #333;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--beige);
+  color: var(--text-color);
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
+  width: 90%;
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem 0;
 }
 
-h1, h2, h3 {
-    color: #2b6e6a;
-}
-
-/* Header Styles */
 header {
-    background-color: #f3e1d5;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+  background-color: var(--pastel-green);
+  text-align: center;
+  padding: 4rem 1rem;
 }
 
 header h1 {
-    font-size: 2.5em;
-    color: #d47a73;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
-header p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+header .highlight {
+  color: var(--blush);
 }
 
-.github-stats img {
-    width: 100%;
-    max-width: 500px;
+header .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: var(--blush);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-.download-cv button {
-    background-color: #9dbd6d;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1.1em;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-decoration: none;
+section {
+  padding: 2rem 0;
 }
 
-.download-cv button:hover {
-    background-color: #7a9f53;
-}
-
-/* About Section */
-.about {
-    background-color: #ffffff;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.about p {
-    font-size: 1.2em;
-    line-height: 1.6;
-}
-
-/* Projects Section */
-.projects {
-    background-color: #e5e8e4;
-    padding: 50px 0;
-    text-align: center;
+h2 {
+  color: var(--blush);
+  border-bottom: 2px solid var(--pastel-green);
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 
 .projects ul {
-    list-style-type: none;
-    padding: 0;
+  list-style: disc;
+  padding-left: 1.5rem;
 }
 
-.projects li {
-    font-size: 1.2em;
-    margin: 10px 0;
+.github img {
+  width: 100%;
+  max-width: 600px;
+  border: 2px solid var(--blush);
+  border-radius: 8px;
 }
 
-/* Footer */
 footer {
-    background-color: #f3e1d5;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer p {
-    color: #d47a73;
-    font-size: 1.1em;
+  background-color: var(--pastel-green);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
 }
