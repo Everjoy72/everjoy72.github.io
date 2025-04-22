@@ -1,91 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Everjoy's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f7fa;
-      color: #333;
-    }
-    header {
-      background-color: #007bff;
-      color: white;
-      padding: 30px;
-      text-align: center;
-    }
-    header img {
-      border-radius: 50%;
-      width: 120px;
-      height: 120px;
-      margin-bottom: 20px;
-    }
-    section {
-      margin: 40px;
-    }
-    h2 {
-      color: #007bff;
-    }
-    .github-stats {
-      display: flex;
-      justify-content: center;
-      margin: 20px 0;
-    }
-    .github-stats img {
-      margin: 0 15px;
-    }
-    .cv-button {
-      display: block;
-      text-align: center;
-      margin: 20px 0;
-    }
-    .cv-button a {
-      background-color: #28a745;
-      color: white;
-      padding: 12px 25px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    .cv-button a:hover {
-      background-color: #218838;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Everjoy Gara | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="background"></div>
+  <div class="container">
+    <header>
+      <h1>Everjoy Gara</h1>
+      <p class="subtitle">GitHub page created by Everjoy Gara</p>
+    </header>
 
-  <header>
-    <img src="https://via.placeholder.com/150" alt="Profile Picture">
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I'm Everjoy – A passionate IT graduate focused on software development, cybersecurity, and data analytics.</p>
-  </header>
+    <nav>
+      <a href="#welcome">Welcome</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About Me</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-  <section>
-    <h2>About Me</h2>
-    <p>I'm an IT and Management graduate with expertise in software development, cybersecurity, and business intelligence. I love solving problems and creating innovative solutions.</p>
+    <section id="welcome">
+      <h2>Welcome</h2>
+      <p>Hello! I'm Everjoy, an IT & Management graduate passionate about cybersecurity, software development, and business intelligence. Explore my work and skills below.</p>
+    </section>
 
-    <h2>Skills</h2>
-    <ul>
-      <li>Programming: Python, JavaScript, R, SQL</li>
-      <li>Web Development: HTML, CSS, WordPress, SEO</li>
-      <li>Tools: Tableau, Power BI, Git, TensorFlow</li>
-      <li>Cybersecurity: Network Security, Threat Detection</li>
-    </ul>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>SecureIntel:</strong> Advanced Threat Detection System using Python, SQL, and Tableau</li>
+        <li><strong>Webfolio:</strong> Personal Developer Portfolio Website (HTML, CSS, JS)</li>
+      </ul>
+    </section>
 
-    <div class="github-stats">
-      <img src="https://github-readme-stats.vercel.app/api?username=everjoy72&show_icons=true&hide_title=true&count_private=true&hide=prs" alt="GitHub Stats">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=everjoy72&layout=compact&langs_count=6&hide_title=true" alt="Top Languages">
-    </div>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python, SQL, R, JavaScript</li>
+        <li>Power BI, Tableau, TensorFlow</li>
+        <li>HTML, CSS, WordPress, SEO</li>
+        <li>Xero, QuickBooks, Sage</li>
+        <li>Salesforce, Trello, Microsoft Excel</li>
+      </ul>
+    </section>
 
-    <div class="cv-button">
-      <a href="https://github.com/everjoy72/CV.pdf" download>Download My CV</a>
-    </div>
-  </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a detail-oriented and innovative tech enthusiast with a strong interest in cybersecurity, software development, and operations. I'm eager to contribute to teams where learning, collaboration, and problem-solving are valued.</p>
+    </section>
 
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:garaeverjoy72@gmail.com">garaeverjoy72@gmail.com</a></p>
+      <p>Website: <a href="https://everjoy72.github.io">everjoy72.github.io</a></p>
+      <a class="button" href="cv-everjoy-gara.pdf" download>Download My CV</a>
+    </section>
+
+    <section id="stats">
+      <h2>GitHub Stats</h2>
+      <img src="https://github-readme-stats.vercel.app/api?username=everjoy72&show_icons=true&theme=default" alt="GitHub Stats">
+    </section>
+  </div>
 </body>
 </html>
+
+<style>
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #2a2a2a;
+    background-color: #f5f5dc;
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 14px;
+    margin-top: 2rem;
+  }
+  .container {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.85);
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 12px;
+  }
+  .background {
+    background: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d2?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+    background-size: cover;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 0;
+    opacity: 0.2;
+    filter: grayscale(100%);
+  }
+  nav {
+    margin-bottom: 1.5rem;
+  }
+  nav a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #3b3b3b;
+    font-weight: 500;
+  }
+  .subtitle {
+    font-size: 12px;
+    margin-top: -10px;
+    color: #666;
+  }
+  .button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #cde5d1;
+    color: #000;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+  img {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+</style>
