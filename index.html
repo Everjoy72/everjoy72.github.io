@@ -3,128 +3,153 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Everjoy Gara | Portfolio</title>
+  <title>Everjoy | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #fdf6f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #d8e2dc;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #b7c9a8;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #6b705c;
+    }
+
+    nav {
+      background-color: #ffe5ec;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #6b705c;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    section h2 {
+      color: #6b705c;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #cdb4db;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #b7c9a8;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #a3b18a;
+    }
+
+    footer {
+      background-color: #ffe5ec;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+      color: #6b705c;
+    }
+
+    .github-stats img {
+      max-width: 100%;
+      margin-top: 1rem;
+    }
+  </style>
 </head>
 <body>
-  <div class="background"></div>
-  <div class="container">
-    <header>
-      <h1>Everjoy Gara</h1>
-      <p class="subtitle">GitHub page created by Everjoy Gara</p>
-    </header>
+  <header>
+    <img src="profile.jpg" alt="Profile Photo" />
+    <h1>Hi, I'm Everjoy</h1>
+  </header>
 
-    <nav>
-      <a href="#welcome">Welcome</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#about">About Me</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section id="welcome">
-      <h2>Welcome</h2>
-      <p>Hello! I'm Everjoy, an IT & Management graduate passionate about cybersecurity, software development, and business intelligence. Explore my work and skills below.</p>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a passionate IT and Management graduate with a focus on cybersecurity, software development, and data analytics. I love solving problems and building smart, user-friendly systems.</p>
+  </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>SecureIntel:</strong> Advanced Threat Detection System using Python, SQL, and Tableau</li>
-        <li><strong>Webfolio:</strong> Personal Developer Portfolio Website (HTML, CSS, JS)</li>
-      </ul>
-    </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Languages: Python, SQL, R, JavaScript</li>
+      <li>Tools: Power BI, Tableau, TensorFlow, Git</li>
+      <li>Web: HTML, CSS, WordPress, SEO</li>
+      <li>Cybersecurity: Threat Detection, Network Security, Cloud Security</li>
+    </ul>
+  </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Python, SQL, R, JavaScript</li>
-        <li>Power BI, Tableau, TensorFlow</li>
-        <li>HTML, CSS, WordPress, SEO</li>
-        <li>Xero, QuickBooks, Sage</li>
-        <li>Salesforce, Trello, Microsoft Excel</li>
-      </ul>
-    </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>SecureIntel:</strong> Advanced Threat Detection System using Python, SQL & Tableau</li>
+      <li><strong>Webfolio:</strong> This personal website portfolio built with HTML, CSS, and JavaScript</li>
+    </ul>
+    <a class="btn" href="Everjoy_Gara.pdf" download>Download My CV</a>
+  </section>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I'm a detail-oriented and innovative tech enthusiast with a strong interest in cybersecurity, software development, and operations. I'm eager to contribute to teams where learning, collaboration, and problem-solving are valued.</p>
-    </section>
+  <section class="github-stats">
+    <h2>GitHub Stats</h2>
+    <img src="https://github-readme-stats.vercel.app/api?username=everjoy72&show_icons=true&theme=calm" alt="GitHub Stats" />
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=everjoy72&theme=calm" alt="GitHub Streak" />
+  </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:garaeverjoy72@gmail.com">garaeverjoy72@gmail.com</a></p>
-      <p>Website: <a href="https://everjoy72.github.io">everjoy72.github.io</a></p>
-      <a class="button" href="cv-everjoy-gara.pdf" download>Download My CV</a>
-    </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:garaeverjoy72@gmail.com">garaeverjoy72@gmail.com</a></p>
+    <p>Website: <a href="https://everjoy72.github.io" target="_blank">everjoy72.github.io</a></p>
+  </section>
 
-    <section id="stats">
-      <h2>GitHub Stats</h2>
-      <img src="https://github-readme-stats.vercel.app/api?username=everjoy72&show_icons=true&theme=default" alt="GitHub Stats">
-    </section>
-  </div>
+  <footer>
+    <p>© 2025 Everjoy | Designed with blush, beige, and pastel green vibes ✨</p>
+  </footer>
 </body>
 </html>
-
-<style>
-  body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    color: #2a2a2a;
-    background-color: #f5f5dc;
-    font-size: 12px;
-  }
-  h1 {
-    font-size: 14px;
-  }
-  h2 {
-    font-size: 14px;
-    margin-top: 2rem;
-  }
-  .container {
-    position: relative;
-    z-index: 2;
-    background: rgba(255, 255, 255, 0.85);
-    max-width: 800px;
-    margin: auto;
-    padding: 2rem;
-    border-radius: 12px;
-  }
-  .background {
-    background: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d2?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
-    background-size: cover;
-    position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
-    z-index: 0;
-    opacity: 0.2;
-    filter: grayscale(100%);
-  }
-  nav {
-    margin-bottom: 1.5rem;
-  }
-  nav a {
-    margin-right: 1rem;
-    text-decoration: none;
-    color: #3b3b3b;
-    font-weight: 500;
-  }
-  .subtitle {
-    font-size: 12px;
-    margin-top: -10px;
-    color: #666;
-  }
-  .button {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #cde5d1;
-    color: #000;
-    text-decoration: none;
-    border-radius: 6px;
-  }
-  img {
-    max-width: 100%;
-    margin-top: 1rem;
-  }
-</style>
