@@ -1,48 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Everjoy | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Hi, I'm <span class="highlight">Everjoy</span></h1>
-      <p>Cybersecurity | Data Analytics | Web Developer</p>
-      <a href="Everjoy_CV.pdf" class="btn" download>📄 Download CV</a>
-    </div>
-  </header>
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Github, Linkedin, Mail, Sun, Moon } from "lucide-react";
 
-  <section class="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I’m a tech enthusiast with a background in IT and Management. I specialize in cybersecurity, network security, data analytics, and building clean, user-friendly web experiences.</p>
-    </div>
-  </section>
+export default function HomePage() {
+  return (
+    <main className="min-h-screen bg-beige text-gray-900 dark:bg-gray-900 dark:text-white p-6">
+      <section className="text-center py-16">
+        <h1 className="text-4xl font-bold mb-4">
+          Hi, I’m Everjoy — IT Professional & Creative Decor Enthusiast
+        </h1>
+        <p className="text-xl max-w-2xl mx-auto">
+          Bridging tech and creativity — explore my work in IT, cybersecurity, data analysis, and event décor.
+        </p>
+        <div className="mt-6 flex justify-center gap-4">
+          <Button variant="default">Explore My Work</Button>
+          <Button variant="outline">Download CV</Button>
+        </div>
+      </section>
 
-  <section class="projects">
-    <div class="container">
-      <h2>Featured Projects</h2>
-      <ul>
-        <li><strong>SecureIntel</strong> – Advanced Threat Detection System (Python, SQL, Tableau)</li>
-        <li><strong>Webfolio</strong> – Personal Portfolio Site (HTML, CSS, JavaScript)</li>
-      </ul>
-    </div>
-  </section>
+      <section id="tech-projects" className="py-12">
+        <h2 className="text-3xl font-semibold mb-6 text-center">Technical Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Map your project cards here */}
+          <Card>
+            <CardContent>
+              <h3 className="text-xl font-bold">Cybersecurity Dashboard</h3>
+              <p className="text-sm mt-2">
+                Built a monitoring tool using Python, SQL, and Power BI to track intrusion attempts in real-time.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
 
-  <section class="github">
-    <div class="container">
-      <h2>GitHub Stats</h2>
-      <img src="https://github-readme-stats.vercel.app/api?username=everjoy72&show_icons=true&theme=default" alt="GitHub Stats">
-    </div>
-  </section>
+      <section id="event-decor" className="py-12 bg-pastel-green dark:bg-green-800 text-gray-900 dark:text-white">
+        <h2 className="text-3xl font-semibold mb-6 text-center">Event Decor Portfolio</h2>
+        <p className="text-center max-w-xl mx-auto">
+          Specializing in home-based event setups for birthdays, graduations, baby showers, and more.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+          {/* Image gallery here */}
+          <Card>
+            <CardContent>
+              <img src="/images/decor1.jpg" alt="Birthday Setup" className="rounded-xl" />
+              <p className="mt-2">Pink & Gold Birthday Theme</p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
 
-  <footer>
-    <div class="container">
-      <p>© 2025 Everjoy. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
-</html>
+      <section id="blog" className="py-12">
+        <h2 className="text-3xl font-semibold mb-6 text-center">Blog</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <Card>
+            <CardContent>
+              <h3 className="text-xl font-bold">Top 5 Kid Party Themes for 2025</h3>
+              <p className="text-sm mt-2">From jungle adventures to space missions, here are the top picks.</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent>
+              <h3 className="text-xl font-bold">Using Power BI for Real-Time Business Insights</h3>
+              <p className="text-sm mt-2">Learn how to build a dynamic dashboard for business decision-making.</p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      <section id="contact" className="py-12 text-center">
+        <h2 className="text-3xl font-semibold mb-4">Get In Touch</h2>
+        <p>Email: garaeverjoy72@gmail.com</p>
+        <div className="mt-4 flex justify-center gap-6">
+          <a href="https://github.com/everjoygara" target="_blank" rel="noopener noreferrer">
+            <Github className="w-6 h-6" />
+          </a>
+          <a href="https://linkedin.com/in/everjoygara" target="_blank" rel="noopener noreferrer">
+            <Linkedin className="w-6 h-6" />
+          </a>
+          <a href="mailto:garaeverjoy72@gmail.com">
+            <Mail className="w-6 h-6" />
+          </a>
+        </div>
+      </section>
+    </main>
+  );
+}
