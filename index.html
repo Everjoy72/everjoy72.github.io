@@ -1,1 +1,152 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Everjoy Gara - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #f4f4f4;
+      --text-color: #333;
+      --accent-color: #4CAF50;
+      --header-bg: #4CAF50;
+      --nav-bg: #333;
+      --footer-bg: #333;
+    }
+    body.dark-mode {
+      --bg-color: #121212;
+      --text-color: #f0f0f0;
+      --header-bg: #222;
+      --nav-bg: #000;
+      --footer-bg: #000;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.5s, color 0.5s;
+    }
+    header {
+      background-color: var(--header-bg);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+    nav {
+      background: var(--nav-bg);
+      padding: 10px 0;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    nav button {
+      background: var(--accent-color);
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 2s ease-in;
+    }
+    h2 {
+      color: var(--accent-color);
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    footer {
+      background: var(--footer-bg);
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+      animation: fadeIn 2.5s ease-in;
+    }
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Everjoy Gara</h1>
+  <p>IT Management | Business Intelligence | Cybersecurity | Operations</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+  <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Strategic and detail-oriented professional with expertise in IT management, business intelligence, cybersecurity, and operations management. Proficient in leveraging BI tools and network security technologies to drive business growth and operational excellence. Based in Cape Town, South Africa, and available for immediate start.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Business Intelligence: Tableau, Power BI, SQL, Python</li>
+    <li>IT & Network Security: Network Architecture, Firewall Management, Cyberattack Prevention</li>
+    <li>Project & Operations Management: Trello, Microsoft Project, CRM Systems (Salesforce, HubSpot)</li>
+    <li>Finance & Compliance: Xero, QuickBooks, Sage (Payroll, VAT, Tax Compliance)</li>
+    <li>Web Technologies: HTML, WordPress, TensorFlow, SEO Optimization</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <h3>SecureIntel: Advanced Threat Detection & Analytics System</h3>
+  <p>Developed a real-time data analytics system for enhanced cybersecurity threat detection using Python, SQL, and Tableau. Reduced false positives by 30% with machine learning algorithms.</p>
+
+  <h3>Network Simulation Project</h3>
+  <p>Configured and tested basic network connectivity using Cisco Packet Tracer, managing IP addressing and DHCP configurations to strengthen networking skills.</p>
+
+  <h3>WebFolio: Developer Portfolio</h3>
+  <p>Created an interactive and responsive developer portfolio site using HTML, CSS, and JavaScript to showcase professional qualifications and projects.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:garaeverjoy72@gmail.com">garaeverjoy72@gmail.com</a></p>
+  <p>Phone: +27 73 969 3431</p>
+  <p>Location: Cape Town, South Africa</p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/everjoy-gara-463782184" target="_blank">View Profile</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Everjoy Gara | Built with ❤️</p>
+</footer>
+
+<script>
+function toggleDarkMode() {
+  document.body.classList.toggle('dark-mode');
+}
+</script>
+
+</body>
+</html>
